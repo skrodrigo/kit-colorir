@@ -31,7 +31,7 @@ export default function OfertaExpirada() {
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" /> Bônus #1: Atividades de Alfabetização</li>
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2 flex-shrink-0" /> Bônus #2: Jogo da Memória para Imprimir</li>
               </ul>
-              <a href="#" className="mt-auto bg-green-500 text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-green-600 transition-transform transform hover:scale-105 shadow-lg">QUERO APROVEITAR A OFERTA!</a>
+              <a href="https://pay.cakto.com.br/srnxhcd" className="mt-auto bg-green-500 text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-green-600 transition-transform transform hover:scale-105 shadow-lg">QUERO APROVEITAR A OFERTA!</a>
             </div>
           </div>
 

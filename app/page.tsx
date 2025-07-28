@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-gray-50 text-gray-800 font-sans">
       {/* Hero Section */}
       <header className="bg-amber-100 text-center py-12 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4">🎨 Kit de Atividades: +300 Desenhos para Estimular o Aprendizado Criativo</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4">🎨 Kit com +300 Desenhos Para Colorir</h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-700">A ferramenta ideal para pais, professores e alunos! Atividades educativas que desenvolvem a coordenação motora, concentração e criatividade em casa ou na sala de aula.</p>
         <div className="my-8 flex justify-center">
           <Carousel className="w-full max-w-lg">
@@ -99,7 +99,7 @@ export default function Home() {
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #1: Atividades de Alfabetização</li>
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #2: Jogo da Memória para Imprimir</li>
               </ul>
-              <a href="#" className="mt-auto bg-pink-500 text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-pink-600 transition-transform transform hover:scale-105">QUERO O KIT COMPLETO!</a>
+              <a href="https://pay.cakto.com.br/mixvq2u_499173" className="mt-auto bg-pink-500 text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-pink-600 transition-transform transform hover:scale-105">QUERO O KIT COMPLETO!</a>
             </div>
           </div>
         </section>
