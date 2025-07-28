@@ -14,7 +14,7 @@ export default function Home() {
       {/* Hero Section */}
       <header className="bg-amber-100 text-center py-12 px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4">🎨 Kit com +300 Desenhos Para Colorir</h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-700">A ferramenta ideal para pais, professores e alunos! Atividades educativas que desenvolvem a coordenação motora, concentração e criatividade em casa ou na sala de aula.</p>
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-700">A ferramenta ideal para pais e professores! Atividades educativas que desenvolvem a coordenação motora, concentração e criatividade em casa ou na sala de aula.</p>
         <div className="my-8 flex justify-center">
           <Carousel className="w-full max-w-lg">
             <CarouselContent>
@@ -42,20 +42,20 @@ export default function Home() {
       <main>
         {/* Benefits Section */}
         <section id="beneficios" className="py-16 px-4">
-          <h2 className="text-3xl font-bold text-center mb-10 text-cyan-600">Perfeito para Pais, Professores e Alunos</h2>
+          <h2 className="text-3xl font-bold text-center mb-10 text-cyan-600">Perfeito para Pais e Professores</h2>
           <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
             <div className="p-6 bg-white rounded-lg shadow-md">
-              <Zap className="w-12 h-12 mx-auto text-yellow-500 mb-4" />
+              <span className="text-5xl mx-auto text-yellow-500 mb-4">🚀</span>
               <h3 className="font-bold text-xl mb-2">Desenvolvimento Acelerado</h3>
-              <p>Estimula a coordenação motora fina e a concentração dos alunos de forma lúdica e eficaz.</p>
+              <p>Estimula a coordenação motora fina e a concentração das crianças de forma lúdica e eficaz.</p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md">
-              <Palette className="w-12 h-12 mx-auto text-blue-500 mb-4" />
+              <span className="text-5xl mx-auto text-blue-500 mb-4">📚</span>
               <h3 className="font-bold text-xl mb-2">Ferramenta Pedagógica</h3>
               <p>Um recurso versátil para professores aplicarem em sala de aula e pais reforçarem o aprendizado em casa.</p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md">
-              <Heart className="w-12 h-12 mx-auto text-red-500 mb-4" />
+              <span className="text-5xl mx-auto text-red-500 mb-4">❤️</span>
               <h3 className="font-bold text-xl mb-2">Aprendizado com Afeto</h3>
               <p>Cria momentos de conexão e aprendizado entre pais e filhos, e torna a aula mais divertida.</p>
             </div>
@@ -66,7 +66,7 @@ export default function Home() {
         <section className="bg-teal-50 py-16 px-4">
            <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-teal-700 mb-6">A Solução para o Aprendizado Criativo</h2>
-              <p className="text-lg mb-4">&quot;<span className="font-bold text-pink-600">Meus filhos/alunos perdem o foco facilmente.</span>&quot; - Nosso kit foi criado para capturar a atenção com desenhos envolventes, transformando o aprendizado em uma brincadeira que eles não querem largar.</p>
+              <p className="text-lg mb-4">&quot;<span className="font-bold text-pink-600">Meus filhos perdem o foco facilmente.</span>&quot; - Nosso kit foi criado para capturar a atenção com desenhos envolventes, transformando o aprendizado em uma brincadeira que eles não querem largar.</p>
               <p className="text-lg">&quot;<span className="font-bold text-pink-600">Falta tempo para preparar atividades de qualidade.</span>&quot; - Nós já fizemos o trabalho por você! São mais de 300 atividades prontas para imprimir, economizando tempo precioso de pais e professores.</p>
            </div>
         </section>
@@ -84,7 +84,7 @@ export default function Home() {
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> 50 Desenhos para Colorir</li>
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Acesso Imediato</li>
               </ul>
-              <a href="/oferta-expirada" className="mt-auto bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-400 transition-colors">Escolher Essencial</a>
+              <a href="/oferta-expirada" className="mt-auto bg-gray-100 border text-gray-950 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors">Escolher Essencial</a>
             </div>
 
             {/* Premium Plan */}
@@ -116,7 +116,7 @@ export default function Home() {
                     <div className="flex text-yellow-400">{Array(5).fill(0).map((_, index) => <Star key={`ana-star-${index}`} size={18} className='fill-yellow-400'/>)}</div>
                   </div>
               </div>
-              <p>&quot;Uso o kit com meus alunos e com meu filho. É uma ferramenta incrível que economiza meu tempo e engaja as crianças de um jeito único!&quot;</p>
+              <p>&quot;Uso o kit com minhas crianças. É uma ferramenta incrível que economiza meu tempo e engaja as crianças de um jeito único!&quot;</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
@@ -144,7 +144,7 @@ export default function Home() {
         {/* Final CTA Section */}
         <section className="text-center py-16 px-4 bg-pink-500 text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Transforme o Aprendizado Hoje Mesmo!</h2>
-            <p className="max-w-3xl mx-auto text-lg mb-8">Ofereça a melhor ferramenta de desenvolvimento para seus filhos e alunos. Praticidade para pais e professores, diversão garantida para as crianças.</p>
+            <p className="max-w-3xl mx-auto text-lg mb-8">Ofereça a melhor ferramenta de desenvolvimento para seus alunos ou filhos. Praticidade para pais e professores, diversão garantida para as crianças.</p>
             <a href="#precos" className="bg-white text-pink-600 font-bold py-4 px-10 rounded-full text-xl hover:bg-amber-100 transition-transform transform hover:scale-105 shadow-lg">GARANTIR MEU KIT COMPLETO!</a>
         </section>
       </main>
