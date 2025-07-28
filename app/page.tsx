@@ -76,28 +76,28 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-10 text-pink-600">Escolha o Plano Ideal para Você</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {/* Basic Plan */}
-            <div className="border-2 border-gray-200 rounded-lg p-8 w-full max-w-sm text-center flex flex-col">
+            <div className="border-2 border-gray-200 rounded-lg p-8 w-full max-w-sm text-center flex flex-col opacity-70">
               <h3 className="text-2xl font-bold mb-2">Kit Essencial</h3>
-              <p className="text-4xl font-bold my-4">R$ 9<span className="text-lg font-normal">,90</span></p>
+              <p className="text-gray-500 line-through">De R$ 37,00</p>
+              <p className="text-4xl font-bold my-2">Por R$ 9<span className="text-lg font-normal">,90</span></p>
               <ul className="text-left space-y-2 mb-8 flex-grow">
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> 50 Desenhos para Colorir</li>
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Acesso Imediato</li>
               </ul>
-              <a href="#" className="mt-auto bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-400 transition-colors">Escolher Essencial</a>
+              <a href="/oferta-expirada" className="mt-auto bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-400 transition-colors">Escolher Essencial</a>
             </div>
 
             {/* Premium Plan */}
             <div className="border-4 border-pink-500 rounded-lg p-8 w-full max-w-sm text-center flex flex-col relative shadow-2xl">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-pink-500 text-white px-4 py-1 rounded-full text-sm font-bold">MAIS POPULAR</div>
               <h3 className="text-2xl font-bold mb-2">Kit Completo Premium</h3>
-              <p className="text-5xl font-bold my-4 text-pink-600">R$ 17<span className="text-lg font-normal">,90</span></p>
+              <p className="text-gray-500 line-through">De R$ 67,00</p>
+              <p className="text-5xl font-bold my-2 text-pink-600">Por R$ 17<span className="text-lg font-normal">,90</span></p>
               <ul className="text-left space-y-2 mb-8 flex-grow">
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> <strong>300+</strong> Desenhos para Colorir</li>
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Acesso Imediato e Vitalício</li>
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #1: Atividades de Alfabetização</li>
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #2: Jogo da Memória para Imprimir</li>
-                <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #3: Desenhos para Recortar</li>
-                <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #4: Guia para Pais e Educadores</li>
               </ul>
               <a href="#" className="mt-auto bg-pink-500 text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-pink-600 transition-transform transform hover:scale-105">QUERO O KIT COMPLETO!</a>
             </div>
