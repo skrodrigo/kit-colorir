@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Kit de Atividades Criativas",
@@ -43,12 +42,11 @@ export default function RootLayout({
           }}
         />
         <noscript>
-          <Image
+          <img
             height="1"
             width="1"
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=630915322869593&ev=PageView&noscript=1"
-            alt=""
           />
         </noscript>
         {children}
