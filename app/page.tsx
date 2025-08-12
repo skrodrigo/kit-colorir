@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div className="my-8 space-y-12 flex justify-center items-center flex-col">
          <CarrouselComponent  />
-         <a href="#precos" className="bg-pink-500  text-white font-bold py-3 px-2 rounded-full text-xl hover:bg-pink-600 shadow-lg ">QUERO O KIT COMPLETO!</a>
+         <a href="#precos" className="bg-pink-500  text-white font-bold py-3 px-12 rounded-full text-xl hover:bg-pink-600 shadow-lg ">QUERO O KIT COMPLETO!</a>
         </div>
       </header>
 
@@ -143,7 +143,7 @@ export default function Home() {
         <section className="text-center py-16 px-4 bg-pink-500 text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Transforme o Aprendizado Hoje Mesmo!</h2>
             <p className="max-w-3xl mx-auto text-lg mb-8">Ofereça a melhor ferramenta de desenvolvimento para seus alunos ou filhos. Praticidade para pais e professores, diversão garantida para as crianças.</p>
-            <a href="#precos" className="bg-white text-pink-600 font-bold py-4 px-2 rounded-full text-xl hover:bg-amber-100 transition-transform transform hover:scale-105 shadow-lg">OBTER ACESSO!</a>
+            <a href="#precos" className="bg-white text-pink-600 font-bold py-4 px-12 rounded-full text-xl hover:bg-amber-100 transition-transform transform hover:scale-105 shadow-lg">OBTER ACESSO!</a>
         </section>
       </main>
 
