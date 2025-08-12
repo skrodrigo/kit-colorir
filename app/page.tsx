@@ -1,42 +1,39 @@
-import { CheckCircle, Star, Zap, Palette, Heart } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
+import { CheckCircle, Star } from 'lucide-react';
 import Image from 'next/image';
+import CarrouselComponent from './carrousel';
+import CtaButtonMotion from './cta-button-motion';
+
+const benefits = [
+  {
+    title: 'Ideal para pais e professores!',
+  },
+  {
+    title: 'Coordenação motora e criatividade!',
+  },
+  {
+    title: 'Entrega Instantaneamente!',
+  }
+]
+
 
 export default function Home() {
-  return (
+  return ( 
     <div className="bg-gray-50 text-gray-800 font-sans">
       {/* Hero Section */}
-      <header className="bg-amber-100 text-center py-12 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4">🎨 Kit com +300 Desenhos Para Colorir</h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-700">A ferramenta ideal para pais e professores! Atividades educativas que desenvolvem a coordenação motora, concentração e criatividade em casa ou na sala de aula.</p>
-        <div className="my-8 flex justify-center">
-          <Carousel className="w-full max-w-lg">
-            <CarouselContent>
-              {['/bo-g-1.png', '/bo-g-2.png', '/bo-g-3.png', '/bo-g-4.png'].map((src, index) => (
-                <CarouselItem key={index}>
-                  <div className="p-1">
-                    <Image
-                      src={src}
-                      alt={`Imagem do kit de atividades ${index + 1}`}
-                      width={600}
-                      height={400}
-                      className="mx-auto rounded-lg shadow-lg"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex" />
-            <CarouselNext className="hidden sm:flex" />
-          </Carousel>
+      <header className="bg-amber-100 text-center py-12 px-4 h-screen">
+        <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4">🎨+300 Desenhos Bobbie Goods Para Colorir</h1>
+        <div className="max-w-3xl mx-auto text-lg md:text-xl text-gray-900">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="flex items-center justify-center">
+              <CheckCircle className="size-5 text-green-500 mr-2 flex-shrink-0" />
+              <span className="text-xl">{benefit.title}</span>
+            </div>
+          ))}
         </div>
-        <a href="#precos" className="bg-pink-500 text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-pink-600 transition-transform transform hover:scale-105 shadow-lg ">QUERO O KIT COMPLETO!</a>
+        <div className="my-8 space-y-12 flex justify-center items-center flex-col">
+         <CarrouselComponent  />
+         <a href="#precos" className="bg-pink-500  text-white font-bold py-3 px-2 rounded-full text-xl hover:bg-pink-600 shadow-lg ">QUERO O KIT COMPLETO!</a>
+        </div>
       </header>
 
       <main>
@@ -66,7 +63,7 @@ export default function Home() {
         <section className="bg-teal-50 py-16 px-4">
            <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-teal-700 mb-6">A Solução para o Aprendizado Criativo</h2>
-              <p className="text-lg mb-4">&quot;<span className="font-bold text-pink-600">Meus filhos perdem o foco facilmente.</span>&quot; - Nosso kit foi criado para capturar a atenção com desenhos envolventes, transformando o aprendizado em uma brincadeira que eles não querem largar.</p>
+              <p className="text-lg mb-4">&quot;<span className="font-bold text-pink-600">Meus filhos perdem o foco facilmente.</span>&quot; - Nosso kit foi criado para capturar a atenção com desenhos Bobbie Goods envolventes, transformando o aprendizado em uma brincadeira que eles não querem largar.</p>
               <p className="text-lg">&quot;<span className="font-bold text-pink-600">Falta tempo para preparar atividades de qualidade.</span>&quot; - Nós já fizemos o trabalho por você! São mais de 300 atividades prontas para imprimir, economizando tempo precioso de pais e professores.</p>
            </div>
         </section>
@@ -75,7 +72,7 @@ export default function Home() {
         <section id="precos" className="py-16 px-4">
           <h2 className="text-3xl font-bold text-center mb-10 text-pink-600">Escolha o Plano Ideal para Você</h2>
           <div className="flex flex-wrap justify-center gap-8">
-            {/* Basic Plan */}
+            {/* Basic Plan
             <div className="border-2 border-gray-200 rounded-lg p-8 w-full max-w-sm text-center flex flex-col opacity-70">
               <h3 className="text-2xl font-bold mb-2">Kit Essencial</h3>
               <p className="text-gray-500 line-through">De R$ 37,00</p>
@@ -85,16 +82,16 @@ export default function Home() {
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Acesso Imediato</li>
               </ul>
               <a href="/oferta-expirada" className="mt-auto bg-gray-100 border text-gray-950 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors">Escolher Essencial</a>
-            </div>
+            </div> */}
 
             {/* Premium Plan */}
             <div className="border-4 border-pink-500 rounded-lg p-8 w-full max-w-sm text-center flex flex-col relative shadow-2xl">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-pink-500 text-white px-4 py-1 rounded-full text-sm font-bold">MAIS POPULAR</div>
               <h3 className="text-2xl font-bold mb-2">Kit Completo Premium</h3>
               <p className="text-gray-500 line-through">De R$ 67,00</p>
-              <p className="text-5xl font-bold my-2 text-pink-600">Por R$ 17<span className="text-lg font-normal">,90</span></p>
+              <p className="text-5xl font-bold my-2 text-pink-600">Por R$ 9<span className="text-lg font-normal">,90</span></p>
               <ul className="text-left space-y-2 mb-8 flex-grow">
-                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> <strong>300+</strong> Desenhos para Colorir</li>
+                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> <strong>300+</strong> Desenhos Bobbie Goods para Colorir</li>
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Acesso Imediato e Vitalício</li>
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #1: Atividades de Alfabetização</li>
                 <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #2: Jogo da Memória para Imprimir</li>
@@ -136,7 +133,7 @@ export default function Home() {
                     <div className="flex text-yellow-400">{Array(5).fill(0).map((_, index) => <Star key={`lucas-star-${index}`} size={18} className='fill-yellow-400'/>)}</div>
                   </div>
               </div>
-              <p>&quot;Incrível! A qualidade dos desenhos é excelente e meu filho aprende enquanto brinca. A melhor compra que fiz.&quot;</p>
+              <p>&quot;Incrível! A qualidade dos desenhos Bobbie Goods é excelente e meu filho aprende enquanto brinca. A melhor compra que fiz.&quot;</p>
             </div>
           </div>
         </section>
@@ -145,7 +142,7 @@ export default function Home() {
         <section className="text-center py-16 px-4 bg-pink-500 text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Transforme o Aprendizado Hoje Mesmo!</h2>
             <p className="max-w-3xl mx-auto text-lg mb-8">Ofereça a melhor ferramenta de desenvolvimento para seus alunos ou filhos. Praticidade para pais e professores, diversão garantida para as crianças.</p>
-            <a href="#precos" className="bg-white text-pink-600 font-bold py-4 px-10 rounded-full text-xl hover:bg-amber-100 transition-transform transform hover:scale-105 shadow-lg">GARANTIR MEU KIT COMPLETO!</a>
+            <a href="#precos" className="bg-white text-pink-600 font-bold py-4 px-2 rounded-full text-xl hover:bg-amber-100 transition-transform transform hover:scale-105 shadow-lg">OBTER ACESSO!</a>
         </section>
       </main>
 

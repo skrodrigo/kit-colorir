@@ -23,7 +23,7 @@ export default function OfertaExpirada() {
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-pink-500 text-white px-4 py-1 rounded-full text-sm font-bold">OFERTA EXCLUSIVA</div>
               <h3 className="text-2xl font-bold mb-2">Kit Completo Premium</h3>
               <p className="text-gray-500 line-through text-lg">De R$ 67,00</p>
-              <p className="text-gray-500 line-through text-2xl">Por R$ 17,90</p>
+              <p className="text-gray-500 line-through text-2xl">Por R$ 13,90</p>
               <p className="text-5xl font-bold my-2 text-pink-600">Hoje por R$ 13<span className="text-lg font-normal">,40</span></p>
               <ul className="text-left space-y-2 my-6 md:my-8 flex-grow">
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" /> <strong>300+</strong> Desenhos para Colorir</li>
