@@ -1,7 +1,6 @@
 import { CheckCircle, Star } from 'lucide-react';
 import Image from 'next/image';
 import CarrouselComponent from './carrousel';
-import CtaButtonMotion from './cta-button-motion';
 
 const benefits = [
   {
@@ -91,10 +90,12 @@ export default function Home() {
               <p className="text-gray-500 line-through">De R$ 67,00</p>
               <p className="text-5xl font-bold my-2 text-pink-600">Por R$ 9<span className="text-lg font-normal">,90</span></p>
               <ul className="text-left space-y-2 mb-8 flex-grow">
-                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> <strong>300+</strong> Desenhos Bobbie Goods para Colorir</li>
+                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> 300+ desenhos Bobbie Goods para Colorir</li>
                 <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Acesso Imediato e Vitalício</li>
-                <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #1: Atividades de Alfabetização</li>
-                <li className="flex items-center text-pink-600 font-bold"><CheckCircle className="w-5 h-5 mr-2" /> Bônus #2: Jogo da Memória para Imprimir</li>
+                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Formato PDF de Alta Qualidade</li>
+                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Imprima Quantas Vezes Quiser</li>
+                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Ideal para Tablet, Celular ou Impressão</li>
+                <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-2" /> Suporte direto para dúvidas e orientações</li>
               </ul>
               <a href="https://pay.cakto.com.br/mixvq2u_499173" className="mt-auto bg-pink-500 text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-pink-600 transition-transform transform hover:scale-105">QUERO O KIT COMPLETO!</a>
             </div>
